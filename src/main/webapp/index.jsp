@@ -29,8 +29,9 @@
                 border-radius: 8px;
                 box-shadow: 0 8px 24px rgba(0,0,0,0.6);
                 border-top: 5px solid #d4af37;
-                width: 95%;
-                max-width: 400px;
+                width: 100%;
+                max-width: 450px;
+                box-sizing: border-box;
             }
 
             h2 {
@@ -51,14 +52,16 @@
                 font-size: 15px;
             }
             input[type="text"], input[type="number"], input[type="email"] {
-                width: 100px;
-                padding: 10px;
+                display: block; /* Obliga al input a comportarse como un bloque */
+                width: 100%;    /* Ocupa todo el ancho disponible del contenedor */
+                padding: 12px;
                 box-sizing: border-box;
                 background-color: #333;
                 border: 1px solid #444;
                 color: #fff;
                 border-radius: 4px;
-                transition: border-color 0.3s;;
+                transition: border-color 0.3s;
+                font-size: 15px;
             }
             input:focus {
                 border-color: #d4af37;
